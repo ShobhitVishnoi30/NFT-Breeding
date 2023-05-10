@@ -1,0 +1,44 @@
+{
+  "name": "nft_breeding",
+  "version": "1.0.0",
+  "description": "Basic template that can be used to create NFT breeding smart contract",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js --network",
+    "clean": "npx hardhat clean",
+    "lint:sol": "solhint --config .solhint.json contracts/**/*.sol",
+    "prettier": "prettier --write contracts/**/*.sol",
+    "prettier:list-different": "prettier --config .prettierrc --list-different **/*.{js,sol}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svrapidinnovation/NFT_Breeding.git"
+  },
+  "keywords": [
+    "Blockchain",
+    "Ethereum",
+    "NFT"
+  ],
+  "author": "Shobhit Vishnoi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svrapidinnovation/NFT_Breeding/issues"
+  },
+  "homepage": "https://github.com/svrapidinnovation/NFT_Breeding#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.2",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.3",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@openzeppelin/contracts": "^4.7.3",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
+    "hardhat": "^2.10.1",
+    "hardhat-docgen": "^1.3.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.24",
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5"
+  }
+}
